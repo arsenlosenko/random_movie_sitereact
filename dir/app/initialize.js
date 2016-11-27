@@ -3,6 +3,7 @@ import React from 'react';
 import App from 'components/App';
 import Buttons from 'components/Buttons';
 import Footer from 'components/Footer';
+import Script from 'components/Script';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,4 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Footer />, document.querySelector('#footer'));
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.render(<Script />, document.querySelector('#script'));
 });
