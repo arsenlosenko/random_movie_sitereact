@@ -1,14 +1,12 @@
 import React from 'react';
 
-export default class Test extends React.Component{
+export default class Buttons extends React.Component{
 	render(){
 		return(
 			<div>
-				<button type="button"  id="left" className="btn-lg">&#8592;</button>
-				<button type="button"  id="right" className="btn-lg">&#8594;</button>
+			<button id="left" className="btn btn-primary">&#8592;</button>
+			<button id="right" className="btn btn-primary">&#8594;</button>
 			</div>
 			);
-				}
-
-
+	}
 }

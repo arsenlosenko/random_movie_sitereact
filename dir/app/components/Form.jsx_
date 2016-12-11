@@ -1,0 +1,40 @@
+import React from 'react';
+import Deploy from 'components/Deploy';
+
+export default class Form extends React.Component{
+	constructor(props){
+		super(props);
+		this.state={ value : " "};
+	}
+
+	handleSubmit(event){
+		alert('The movie is submitted' + this.state.value);
+		event.preventOnDefault();
+	}
+
+	handleChange(event){
+		alert('Click');
+		}
+	render(){
+		return(
+			<div>
+				<form onSubmit={this.handleSubmit}>
+				<select>
+					<option value="actions"/>Action</option>
+					<option value="adventure"/>Adventure</option>
+					<option value="comedy"/>Comedy</option>
+					<option value="crime"/>Crime</option>
+					<option value="drama"/>Drama</option>
+					<option value="history"/>Historical</option>
+					<option value="sci-fi"/>Sci-fi</option>
+					<option value="Western"/>Western</option>
+				</select>
+				<input type="submit" value="Submit" onClick={this.sshandleChange.bind(this)}/>
+				</form>
+			</div>
+
+			);
+	}
+	}
+
+
